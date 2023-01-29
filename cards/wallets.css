@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --main-color: #08131f;
+  --text: #cacdd0;
+  --bg-body: #0a1b2f;
+  --box-clr: #111f2e;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+body {
+  background-color: var(--box-clr);
+}
+
+.titles {
+  font-family: "Poppins" cursive;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+/* Side-bar */
+.side-bar {
+  width: 345px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  z-index: 100;
+  transition: width 300ms;
+}
+
+.side-logo {
+  height: 90px;
+  padding: 1rem 0rem 1rem 2rem;
+  color: orange;
+}
+.side-logo h2 span {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.side-menu {
+  margin-top: 1rem;
+}
+
+.side-menu li {
+  width: 100%;
+  margin-bottom: 1.7rem;
+  padding-left: 1rem;
+}
+.side-menu a {
+  padding-left: 1rem;
+  display: block;
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.side-menu a.active {
+  background: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--main-color);
+  border-radius: 30px 0px 0px 30px;
+}
+.side-menu a span:first-child {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+
+/* Coins container */
+
+main {
+  margin-top: 85px;
+  padding: 2rem 1.5rem;
+  background: var(--box-clr);
+  min-height: calc(100vh - 90px);
+}
+.titles {
+  font-family: "Poppins" cursive;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+.graph-icon span {
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+}
+
+.container {
+  margin: 100px 400px;
+}
+
+.coins {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 2rem;
+}
+
+.coins-single {
+  display: flex;
+  justify-content: space-between;
+  background: var(--box-clr);
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(207, 206, 206, 0.558);
+}
+.coin-img {
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 2px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(176, 173, 173, 0.938);
+}
+.coins-single span {
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.last span {
+  color: #fff;
+}
